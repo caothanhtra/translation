@@ -2,7 +2,6 @@
   "COMMON": {
     "ACTIONS": {
       "APPLY": "Zatwierdź",
-      "COPY": "Skopiuj",
       "CREATE": "Utwórz",
       "DELETE": "Skasuj",
       "DUPLICATE": "Duplikuj\n",
@@ -10,7 +9,8 @@
       "HIDE": "Ukryj",
       "REMOVE": "Usuń",
       "UPDATE": "Aktualizuj",
-      "VIEW": "Widok"
+      "VIEW": "Widok",
+      "COPY": "Skopiuj"
     },
     "AI": {
       "AI_FLASHCARDS": "Fiszki AI"
@@ -276,35 +276,15 @@
   },
   "SETTINGS": {
     "ACCOUNT": {
-      "ADVANCED": {
-        "KEYWORDS": "Wsparcie Pomoc Techniczna Szukaj Wyszukiwanie Napraw Błąd Błędy Bug"
-      },
       "ADVANCED_TITLE": "Zaawansowane Ustawienia",
-      "AUTHENTICATION": {
-        "KEYWORDS": "Wylogowanie Wyloguj się Metoda Metodę Logowania Google Dodaj Rozłącz Zalogowanie Zaloguj się Zarejestruj się"
-      },
       "AUTHENTICATION_TITLE": "Uwierzytelnianie",
-      "CACHING": {
-        "DESCRIPTION": "Zapisuj obrazy w pamięci podręcznej po ich załadowaniu, aby można je było przeglądać w trybie offline.",
-        "NUMBER_DESCRIPTION": "Ustaw maksymalną liczbę obrazów do zapisania w pamięci podręcznej. Po osiągnięciu limitu najstarsze obrazy zostaną usunięte z pamięci podręcznej.",
-        "NUMBER_TITLE": "Maksymalna liczba obrazów zapisanych w pamięci podręcznej",
-        "TITLE": "Zapisywanie w pamięci podręcznej",
-        "TOGGLE_DESCRIPTION": "Po wyłączeniu tej opcji wszystkie obrazy z pamięci podręcznej zostaną usunięte.",
-        "TOGGLE_TITLE": "Włącz pamięć podręczną"
-      },
       "DANGER_ZONE": {
         "KEYWORDS": "synchronizacja log usuń konto usuwanie konta skasuj konto skasowanie konta reset przewodnik postęp wprowadzenie zaawansowane ustawienia konta konto",
         "TITLE": "Strefa niebezpieczna"
       },
       "DANGER_ZONE_TITLE": "Strefa niebezpieczna",
-      "EXPORT_IMPORT": {
-        "KEYWORDS": "Eksportuj kopię zapasową Kopia zapasowa Roam Dynalist Logseq Notion Evernote Obsidian"
-      },
       "IMPORT_EXPORT_TITLE": "Importuj i Eksportuj",
       "MY_PROFILE": "Mój Profil",
-      "NAVIGATION": {
-        "KEYWORDS": "Eksportuj i twórz kopie zapasowe Eksportowanie i kopia zapasowa Kosz Widok Skasowane remy Importuj Bazę Wiedzy Wyświetl wszystkie fiszki Pobierz codzienną kopię zapasową Zaawansowane ustawienia Skasuj wszystkie Remy"
-      },
       "NAVIGATION_TITLE": "Nawigacja",
       "PRIVACY": {
         "KEYWORDS": "prywatność",
@@ -326,6 +306,26 @@
       "VERSION": {
         "KEYWORDS": "wersja",
         "TITLE": "Wersja Aplikacji"
+      },
+      "ADVANCED": {
+        "KEYWORDS": "Wsparcie Pomoc Techniczna Szukaj Wyszukiwanie Napraw Błąd Błędy Bug"
+      },
+      "AUTHENTICATION": {
+        "KEYWORDS": "Wylogowanie Wyloguj się Metoda Metodę Logowania Google Dodaj Rozłącz Zalogowanie Zaloguj się Zarejestruj się"
+      },
+      "EXPORT_IMPORT": {
+        "KEYWORDS": "Eksportuj kopię zapasową Kopia zapasowa Roam Dynalist Logseq Notion Evernote Obsidian"
+      },
+      "NAVIGATION": {
+        "KEYWORDS": "Eksportuj i twórz kopie zapasowe Eksportowanie i kopia zapasowa Kosz Widok Skasowane remy Importuj Bazę Wiedzy Wyświetl wszystkie fiszki Pobierz codzienną kopię zapasową Zaawansowane ustawienia Skasuj wszystkie Remy"
+      },
+      "CACHING": {
+        "DESCRIPTION": "Zapisuj obrazy w pamięci podręcznej po ich załadowaniu, aby można je było przeglądać w trybie offline.",
+        "NUMBER_DESCRIPTION": "Ustaw maksymalną liczbę obrazów do zapisania w pamięci podręcznej. Po osiągnięciu limitu najstarsze obrazy zostaną usunięte z pamięci podręcznej.",
+        "NUMBER_TITLE": "Maksymalna liczba obrazów zapisanych w pamięci podręcznej",
+        "TITLE": "Zapisywanie w pamięci podręcznej",
+        "TOGGLE_DESCRIPTION": "Po wyłączeniu tej opcji wszystkie obrazy z pamięci podręcznej zostaną usunięte.",
+        "TOGGLE_TITLE": "Włącz pamięć podręczną"
       },
       "NOTIFICATIONS": {
         "DESCRIPTION": "Wysyłaj mobilne przypomnienia push o codziennej passie fiszek. Przypomnienia pojawiają się codziennie o 18:00 w Twojej lokalnej strefie czasowej.",
@@ -414,6 +414,10 @@
       }
     },
     "EDITOR_INTERFACE": {
+      "SINGLE_CLICK_REFERENCES_TO_OPEN": {
+        "TITLE": "Otwieranie Odnośników jednym kliknięciem",
+        "LABEL": "Kiedy klikniesz lub dotkniesz Odnośnika, od razu otwórz go, zamiast wyświetlać jego Podgląd. (Zawsze możesz wyświetlić jego podgląd, naciskając na niego prawym klawiszem myszki)."
+      },
       "ENABLE_ZOOM_INTO_BULLET": {
         "LABEL": "Kiedy klikniesz punkt, wyświetl Rem jako pełną stronę",
         "TITLE": "Włącz powiększanie punktu"
@@ -425,10 +429,6 @@
       "SCALE_COLLAPSED_REM_BULLETS": {
         "LABEL": "Zwiększ lub zmniejsz pierścień wokół pocisku na podstawie liczby potomków.",
         "TITLE": "Skaluj zwinięte punkty Remów"
-      },
-      "SINGLE_CLICK_REFERENCES_TO_OPEN": {
-        "LABEL": "Kiedy klikniesz lub dotkniesz Odnośnika, od razu otwórz go, zamiast wyświetlać jego Podgląd. (Zawsze możesz wyświetlić jego podgląd, naciskając na niego prawym klawiszem myszki).",
-        "TITLE": "Otwieranie Odnośników jednym kliknięciem"
       },
       "SMOOTHLY_ANIMATE_THE_EDITOR": {
         "LABEL": "Wyświetlaj animacje dodawania i usuwania Remów w Edytorze.",
@@ -442,8 +442,8 @@
     "FLASHCARDS": {
       "DAILY_TARGET": {
         "MAXIMUM_DAILY_TARGET": {
-          "TITLE": "Cel",
-          "DESCRIPTION": "Powtarzaj minimalnie tyle fiszek codziennie, żeby budować serię."
+          "DESCRIPTION": "Powtarzaj minimalnie tyle fiszek codziennie, żeby budować serię.",
+          "TITLE": "Cel"
         },
         "TODAYS_TARGET": "Dzisiejszy wygładzony cel:",
         "TODAYS_TARGET_EXPLANATION": "Jeśli RemNote przewiduje, że w następnym tygodniu będziesz mieć średnio mniej fiszek do powtórzenia niż skonfigurowany dzienny cel, tymczasowo zmniejszymy Twój dzienny cel, tak abyś miał mniej więcej taką samą liczbę kart każdego dnia, zamiast wielu fiszek na początku i niewielu na końcu tygodnia."
@@ -453,14 +453,6 @@
           "DESCRIPTION": "Automatycznie odtwarzaj ścieżki dźwiękowe, bądź filmy znajdujące się na fiszkach.",
           "TITLE": "Odtwarzaj automatycznie dźwięki i filmy"
         },
-        "AUTOPLAY_TEXT_TO_SPEECH": {
-          "DESCRIPTION": "Pokazując fiszkę, automatycznie odtwarzaj syntezator mowy z przodu i z tyłu po odkryciu fiszki.",
-          "TITLE": "Autoodtwarzanie syntezatora mowy"
-        },
-        "LEARN_AHEAD_LIMIT": {
-          "DESCRIPTION": "Po tym, jak powtórzysz wszystkie zaległe fiszki, z jak dalekiej przyszłości mamy pokazywać fiszki, które jeszcze nie są zaległe? Dzięki temu unikniesz konieczności ponownego powtarzania w krótkim czasie.",
-          "TITLE": "Limit nauki z wyprzedzeniem"
-        },
         "LEECH_THRESHOLD": {
           "DESCRIPTION": "Wyświetl ostrzeżenie po wielokrotnym naciśnięciu przycisku „Zapomniałem” w przypadku trudnej fiszki.<leechArticle>Przeczytaj więcej o fiszkach udręki.</leechArticle>",
           "TITLE": "Próg fiszek udręki"
@@ -468,10 +460,6 @@
         "NEW_CARDS_PER_DAY": {
           "DESCRIPTION": "Codziennie dodawaj maksymalnie tyle nowo utworzonych fiszek do swojej kolejki fiszek. Dzięki temu nowe karty będą pojawiać się w Twojej kolejce w stałym dziennym tempie, zamiast w gigantycznej partii.",
           "TITLE": "Maksymalna liczba nowych kart dziennie"
-        },
-        "NEXT_DAY_STARTS_AT": {
-          "DESCRIPTION": "Ustaw godzinę, o której każdego dnia w Twojej kolejce będą pojawiać się nowe karty.",
-          "TITLE": "Następny dzień zaczyna się o"
         },
         "RESET_ALL": {
           "CONFIRM_MESSAGE": "Czy na pewno chcesz zresetować wszystkie ustawienia fiszek do wartości domyślnych?",
@@ -486,6 +474,22 @@
           "DESCRIPTION": "Każdego dnia wprowadzaj ponownie maksymalnie tyle przestarzałych fiszek do swojej kolejki fiszek. Przestarzałe fiszki to takie, które są tymczasowo wstrzymywane z kolejki, ponieważ nie uczyłeś się ich przez długi czas i ponowne uczenie się ich wszystkich na raz byłoby wyczerpujące.",
           "TITLE": "Maksymalna liczba przestarzałych fiszek dziennie"
         },
+        "TYPE_ANSWER": {
+          "DESCRIPTION": "Pokaż pole tekstowe z przodu każdej fiszki i porównaj to, co wpisałeś z odpowiedzią na odwrocie fiszki.",
+          "TITLE": "Wpisz odpowiedź"
+        },
+        "LEARN_AHEAD_LIMIT": {
+          "DESCRIPTION": "Po tym, jak powtórzysz wszystkie zaległe fiszki, z jak dalekiej przyszłości mamy pokazywać fiszki, które jeszcze nie są zaległe? Dzięki temu unikniesz konieczności ponownego powtarzania w krótkim czasie.",
+          "TITLE": "Limit nauki z wyprzedzeniem"
+        },
+        "NEXT_DAY_STARTS_AT": {
+          "DESCRIPTION": "Ustaw godzinę, o której każdego dnia w Twojej kolejce będą pojawiać się nowe karty.",
+          "TITLE": "Następny dzień zaczyna się o"
+        },
+        "AUTOPLAY_TEXT_TO_SPEECH": {
+          "DESCRIPTION": "Pokazując fiszkę, automatycznie odtwarzaj syntezator mowy z przodu i z tyłu po odkryciu fiszki.",
+          "TITLE": "Autoodtwarzanie syntezatora mowy"
+        },
         "TEXT_TO_SPEECH_VOICE": {
           "DESCRIPTION": "Głos używany do zamiany tekstu na mowę. Pamiętaj, że niektóre głosy działają tylko w niektórych językach.",
           "TITLE": "Głos syntezatora mowy",
@@ -494,10 +498,6 @@
         "TEXT_TO_SPEECH_SPEED": {
           "DESCRIPTION": "Szybkość, z jaką syntezator mowy czyta tekst z fiszki.",
           "TITLE": "Szybkość syntezatora mowy"
-        },
-        "TYPE_ANSWER": {
-          "DESCRIPTION": "Pokaż pole tekstowe z przodu każdej fiszki i porównaj to, co wpisałeś z odpowiedzią na odwrocie fiszki.",
-          "TITLE": "Wpisz odpowiedź"
         }
       },
       "ORDERING": {
@@ -564,14 +564,14 @@
         "TITLE": "Język Interfejsu RemNote (Alpha)"
       },
       "LEFT_SIDEBAR_TUTORIALS": {
-        "KEYWORDS": "W aplikacji Lewy Pasek boczny Poradniki Wskazówki Pomoc techniczna Wsparcie techniczne Poradnik",
         "LABEL": "Pokazuj poradniki dotyczące aktualnie używanych funkcjonalności RemNote na dole paska bocznego.",
-        "TITLE": "Poradniki w aplikacji"
+        "TITLE": "Poradniki w aplikacji",
+        "KEYWORDS": "W aplikacji Lewy Pasek boczny Poradniki Wskazówki Pomoc techniczna Wsparcie techniczne Poradnik"
       },
       "ONBOARDING_TIPS_SHORTCUTS": {
-        "KEYWORDS": "Wskazówki Pomoc Wsparcie Poradnik",
         "LABEL": "Pokazuj wskazówki na temat wykorzystywanych skrótów klawiszowych w rogu ekranu.",
-        "TITLE": "Wskazówki skrótów klawiszowych"
+        "TITLE": "Wskazówki skrótów klawiszowych",
+        "KEYWORDS": "Wskazówki Pomoc Wsparcie Poradnik"
       },
       "SIMPLIFIED_UI": {
         "LABEL": "Uprość interfejs użytkownika i ukryj zaawansowane funkcje.",
@@ -612,6 +612,10 @@
         }
       }
     },
+    "PLANS": {
+      "KEYWORDS": "Zaproś znajomych Plan Zmień subskrypcję Zdobądź punkty poleceń Bezpłatny remnote Wyślij Tweet Email Wybierz Plan nauki do końca życia Nauka Pro Spis funkcjonalności Cenning",
+      "TITLE": "Plany"
+    },
     "NOTIFICATIONS": {
       "DESCRIPTIONS": {
         "ARTICLE_VIEWS": {
@@ -643,23 +647,19 @@
           "TITLE": "Powiadomienia serii nauki"
         }
       },
-      "ENABLE_COMMUNITY_LABEL": "Otrzymuj natychmiastowe powiadomienia, gdy ktoś wejdzie w interakcję z udostępnionymi przez Ciebie treściami",
-      "ENABLE_COMMUNITY_TITLE": "Powiadomienia udostępnionych fiszek",
       "ENABLE_DUE_CARDS_LABEL": "Pokaż całkowitą liczbę zaległych fiszek jako plakietkę na ikonie aplikacji RemNote na ekranie głównym",
       "ENABLE_DUE_CARDS_TITLE": "Plakietka zaległych fiszek",
       "ENABLE_EMAIL_LABEL": "Otrzymuj powiadomienia bezpośrednio do Twojej skrzynki",
       "ENABLE_EMAIL_TITLE": "Włącz otrzymywanie powiadomień społeczności poprzez email",
       "ENABLE_PUSH_LABEL": "Otrzymuj powiadomienia bezpośrednio na swoje urządzenie",
       "ENABLE_PUSH_TITLE": "Powiadomienia push",
+      "TOGGLE_LABEL": "Wybierz które powiadomienia chcesz otrzymywać bezpośrednio na swoje urządzenie",
+      "TOGGLE_TITLE": "Powiadom mnie, gdy:",
+      "ENABLE_COMMUNITY_LABEL": "Otrzymuj natychmiastowe powiadomienia, gdy ktoś wejdzie w interakcję z udostępnionymi przez Ciebie treściami",
+      "ENABLE_COMMUNITY_TITLE": "Powiadomienia udostępnionych fiszek",
       "ENABLE_STREAK_DESCRIPTION": "Otrzymuj codzienne przypomnienia o 18:00 na temat Twojej serii fiszek",
       "ENABLE_STREAK_TITLE": "Powiadomienia serii na urządzeniach mobilnych",
-      "PUSH_ENABLE_MESSAGE": "Powiadomienia push nie są skonfigurowane na tym urządzeniu. Kliknij tutaj, aby je ustawić!",
-      "TOGGLE_LABEL": "Wybierz które powiadomienia chcesz otrzymywać bezpośrednio na swoje urządzenie",
-      "TOGGLE_TITLE": "Powiadom mnie, gdy:"
-    },
-    "PLANS": {
-      "KEYWORDS": "Zaproś znajomych Plan Zmień subskrypcję Zdobądź punkty poleceń Bezpłatny remnote Wyślij Tweet Email Wybierz Plan nauki do końca życia Nauka Pro Spis funkcjonalności Cenning",
-      "TITLE": "Plany"
+      "PUSH_ENABLE_MESSAGE": "Powiadomienia push nie są skonfigurowane na tym urządzeniu. Kliknij tutaj, aby je ustawić!"
     },
     "SIDEBAR": {
       "CUSTOMIZE_SIDEBAR_SECTIONS": {
@@ -707,14 +707,14 @@
     "UPLOAD_SOURCE": {
       "EMPTY": "Upuść pliki PDF, dokumenty Word, prezentacje PPT i <moreLink>inne</moreLink> tutaj!",
       "INVALID": "Przepraszamy, RemNote nie akceptuje przesyłania plików tego typu.",
-      "IMPORT_INSTEAD": "RemNote nie akceptuje przesyłania plików tego typu. Jednakże być może uda nam się zaimportować notatki lub fiszki z tego pliku! Spróbuj wybrać opcję „Importuj” z menu konta w lewym górnym rogu.",
       "LABEL": "Prześlij",
       "PDF": "PDF",
       "PDF_WITH_COUNT_one": "{{count, number}} PDF",
       "PDF_WITH_COUNT_other": "{{count, number}} PDF-y",
       "SELECT_FILES": "Wybierz pliki",
       "SELECT_FILES_TO_UPLOAD": "Wybierz pliki do przesłania",
-      "UPLOADING": "Przesyłanie..."
+      "UPLOADING": "Przesyłanie...",
+      "IMPORT_INSTEAD": "RemNote nie akceptuje przesyłania plików tego typu. Jednakże być może uda nam się zaimportować notatki lub fiszki z tego pliku! Spróbuj wybrać opcję „Importuj” z menu konta w lewym górnym rogu."
     },
     "WIKIMEDIA_COMMONS": {
       "EMPTY": "Upuść pliki PDF, dokumenty Word, prezentacje PPT i <moreLink>inne</moreLink> tutaj!",

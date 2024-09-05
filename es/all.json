@@ -2,7 +2,6 @@
   "COMMON": {
     "ACTIONS": {
       "APPLY": "Aplicar",
-      "COPY": "Copiar",
       "CREATE": "Crear",
       "DELETE": "Eliminar",
       "DUPLICATE": "Duplicar",
@@ -10,7 +9,8 @@
       "HIDE": "Ocultar",
       "REMOVE": "Remover",
       "UPDATE": "Actualizar",
-      "VIEW": "Ver"
+      "VIEW": "Ver",
+      "COPY": "Copiar"
     },
     "AI": {
       "AI_FLASHCARDS": "Flashcards de IA"
@@ -275,35 +275,15 @@
   },
   "SETTINGS": {
     "ACCOUNT": {
-      "ADVANCED": {
-        "KEYWORDS": "Soporte Reconectar Buscar Solucionar Error"
-      },
       "ADVANCED_TITLE": "Configuración Avanzada",
-      "AUTHENTICATION": {
-        "KEYWORDS": "Cerrar sesión Método de inicio de sesión con Google Añadir Desconectar Iniciar sesión Registrarse"
-      },
       "AUTHENTICATION_TITLE": "Autenticación",
-      "CACHING": {
-        "DESCRIPTION": "Almacena en caché las imágenes cuando se cargan para que puedan verse sin conexión.",
-        "NUMBER_DESCRIPTION": "Establece el número máximo de imágenes a almacenar en caché. Cuando se alcance el límite, las imágenes más antiguas se eliminarán de la caché.",
-        "NUMBER_TITLE": "Máximo de Imágenes en Caché",
-        "TITLE": "Caché",
-        "TOGGLE_DESCRIPTION": "Cuando está desactivada, se eliminarán todas las imágenes en caché.",
-        "TOGGLE_TITLE": "Habilitar Caché"
-      },
       "DANGER_ZONE": {
         "KEYWORDS": "sincronización registro eliminar cuenta reiniciar tutorial progreso reiniciar introducción configuración avanzado cuenta ajustes",
         "TITLE": "Zona de Peligro"
       },
       "DANGER_ZONE_TITLE": "Zona de Peligro",
-      "EXPORT_IMPORT": {
-        "KEYWORDS": "Exportar Copia de seguridad Exportar Roam Dynalist Logseq Notion Evernote Obsidian"
-      },
       "IMPORT_EXPORT_TITLE": "Importar y Exportar",
       "MY_PROFILE": "Mi Perfil",
-      "NAVIGATION": {
-        "KEYWORDS": "Exportar y Copia de Seguridad Papelera Ver Rem Eliminados Importar Base de Conocimiento Ver Todas las Tarjetas Descargar Copia de Seguridad Diaria Configuración Avanzada Eliminar Todos los Rem"
-      },
       "NAVIGATION_TITLE": "Navegación",
       "PRIVACY": {
         "KEYWORDS": "privacidad",
@@ -325,6 +305,26 @@
       "VERSION": {
         "KEYWORDS": "versión",
         "TITLE": "Versión de la Aplicación"
+      },
+      "ADVANCED": {
+        "KEYWORDS": "Soporte Reconectar Buscar Solucionar Error"
+      },
+      "AUTHENTICATION": {
+        "KEYWORDS": "Cerrar sesión Método de inicio de sesión con Google Añadir Desconectar Iniciar sesión Registrarse"
+      },
+      "EXPORT_IMPORT": {
+        "KEYWORDS": "Exportar Copia de seguridad Exportar Roam Dynalist Logseq Notion Evernote Obsidian"
+      },
+      "NAVIGATION": {
+        "KEYWORDS": "Exportar y Copia de Seguridad Papelera Ver Rem Eliminados Importar Base de Conocimiento Ver Todas las Tarjetas Descargar Copia de Seguridad Diaria Configuración Avanzada Eliminar Todos los Rem"
+      },
+      "CACHING": {
+        "DESCRIPTION": "Almacena en caché las imágenes cuando se cargan para que puedan verse sin conexión.",
+        "NUMBER_DESCRIPTION": "Establece el número máximo de imágenes a almacenar en caché. Cuando se alcance el límite, las imágenes más antiguas se eliminarán de la caché.",
+        "NUMBER_TITLE": "Máximo de Imágenes en Caché",
+        "TITLE": "Caché",
+        "TOGGLE_DESCRIPTION": "Cuando está desactivada, se eliminarán todas las imágenes en caché.",
+        "TOGGLE_TITLE": "Habilitar Caché"
       },
       "NOTIFICATIONS": {
         "DESCRIPTION": "Envíar recordatorios móviles sobre tu racha diaria de tarjetas de estudio. Los recordatorios llegan a las 6 p.m. cada día, en tu zona horaria local.",
@@ -412,6 +412,10 @@
       }
     },
     "EDITOR_INTERFACE": {
+      "SINGLE_CLICK_REFERENCES_TO_OPEN": {
+        "TITLE": "Abrir Referencias con un Solo Clic",
+        "LABEL": "Al hacer clic o tocar una Referencia, ir directamente a su destino en lugar de abrir el menú de referencia. (Siempre puedes mostrar el menú de referencia haciendo clic derecho)."
+      },
       "ENABLE_ZOOM_INTO_BULLET": {
         "LABEL": "l hacer clic en la viñeta, mostrar el rem a página completa.",
         "TITLE": "Habilitar zoom en viñeta"
@@ -424,10 +428,6 @@
         "LABEL": "Ajustar el tamaño del anillo alrededor de la viñeta según el número de descendientes.",
         "TITLE": "Escalar Viñetas de Rems Contraídas"
       },
-      "SINGLE_CLICK_REFERENCES_TO_OPEN": {
-        "LABEL": "Al hacer clic o tocar una Referencia, ir directamente a su destino en lugar de abrir el menú de referencia. (Siempre puedes mostrar el menú de referencia haciendo clic derecho).",
-        "TITLE": "Abrir Referencias con un Solo Clic"
-      },
       "SMOOTHLY_ANIMATE_THE_EDITOR": {
         "LABEL": "Animar al agregar o eliminar Rems en el editor.",
         "TITLE": "Animar el Editor de Forma Fluida"
@@ -436,8 +436,8 @@
     "FLASHCARDS": {
       "DAILY_TARGET": {
         "MAXIMUM_DAILY_TARGET": {
-          "TITLE": "Objetivo Diario Máximo",
-          "DESCRIPTION": "Limita la cantidad de tarjetas de estudio que RemNote te pedirá practicar para alcanzar tu objetivo diario a este valor."
+          "DESCRIPTION": "Limita la cantidad de tarjetas de estudio que RemNote te pedirá practicar para alcanzar tu objetivo diario a este valor.",
+          "TITLE": "Objetivo Diario Máximo"
         },
         "TODAYS_TARGET": "Objetivo de Hoy:",
         "TODAYS_TARGET_EXPLANATION": "RemNote intenta establecer tu objetivo diario de manera que, si lo alcanzas cada día, completarás todas las tarjetas pendientes de repaso durante los próximos 7 días. Sin embargo, el objetivo diario nunca será mayor que el máximo establecido anteriormente."
@@ -447,14 +447,6 @@
           "DESCRIPTION": "Al mostrar una tarjeta de estudio, reproduce automáticamente cualquier audio o video en ella.",
           "TITLE": "Reproducción Automática de Multimedia"
         },
-        "AUTOPLAY_TEXT_TO_SPEECH": {
-          "DESCRIPTION": "Al mostrar una flashcard, reproducir automáticamente el audio de texto a voz para el anverso de la tarjeta y, una vez revelado, para el reverso de la tarjeta.",
-          "TITLE": "Reproducir Automáticamente de Texto A Voz"
-        },
-        "LEARN_AHEAD_LIMIT": {
-          "DESCRIPTION": "Cuando hayas practicado todas las tarjetas que vencen hoy, ¿hasta qué punto en el futuro podemos tomar tarjetas que aún no vencen? Esto te ayuda a evitar tener que volver a practicar muy pronto.",
-          "TITLE": "Límite de Aprendizaje Anticipado"
-        },
         "LEECH_THRESHOLD": {
           "DESCRIPTION": "Las tarjetas problemáticas son aquellas que aprendes y olvidas repetidamente. Si marcas una tarjeta como 'Olvidé' más veces que este valor, te avisaremos para que puedas identificar por qué tienes dificultades y solucionar el problema. Establece un valor más alto para ver el aviso de tarjeta problemática con menos frecuencia.",
           "TITLE": "Umbral de tarjetas problemáticas"
@@ -462,10 +454,6 @@
         "NEW_CARDS_PER_DAY": {
           "DESCRIPTION": "Incluye como máximo esta cantidad de tarjetas de estudio recién creadas en tu cola de estudio cada día. De esta manera, las tarjetas nuevas entrarán en tu cola a un ritmo diario constante, en lugar de en un lote gigante.",
           "TITLE": "Máximo de Tarjetas Nuevas por Día"
-        },
-        "NEXT_DAY_STARTS_AT": {
-          "DESCRIPTION": "Establecer la hora a la que aparecerán nuevas tarjetas en tu cola cada día.",
-          "TITLE": "El día siguiente comienza a las"
         },
         "RESET_ALL": {
           "CONFIRM_MESSAGE": "¿Estás seguro de que quieres restablecer todos los ajustes de las tarjetas de estudio a sus valores predeterminados?",
@@ -480,6 +468,22 @@
           "DESCRIPTION": "Reintroduce como máximo esta cantidad de tarjetas de estudio atrasadas en tu cola de estudio cada día. Las tarjetas atrasadas son aquellas que se retienen temporalmente de la cola porque no las has estudiado en mucho tiempo y volver a aprenderlas todas a la vez sería agotador.",
           "TITLE": "Máximo de Tarjetas Atrasadas por Día"
         },
+        "TYPE_ANSWER": {
+          "DESCRIPTION": "Mostrar un cuadro de texto en el frente de cada tarjeta de estudio y comparar lo que escribes con la respuesta en el reverso de la tarjeta.",
+          "TITLE": "Escribir Respuesta"
+        },
+        "LEARN_AHEAD_LIMIT": {
+          "DESCRIPTION": "Cuando hayas practicado todas las tarjetas que vencen hoy, ¿hasta qué punto en el futuro podemos tomar tarjetas que aún no vencen? Esto te ayuda a evitar tener que volver a practicar muy pronto.",
+          "TITLE": "Límite de Aprendizaje Anticipado"
+        },
+        "NEXT_DAY_STARTS_AT": {
+          "DESCRIPTION": "Establecer la hora a la que aparecerán nuevas tarjetas en tu cola cada día.",
+          "TITLE": "El día siguiente comienza a las"
+        },
+        "AUTOPLAY_TEXT_TO_SPEECH": {
+          "DESCRIPTION": "Al mostrar una flashcard, reproducir automáticamente el audio de texto a voz para el anverso de la tarjeta y, una vez revelado, para el reverso de la tarjeta.",
+          "TITLE": "Reproducir Automáticamente de Texto A Voz"
+        },
         "TEXT_TO_SPEECH_VOICE": {
           "DESCRIPTION": "La voz utilizada para el texto a voz. Ten en cuenta que algunas voces solo funcionan para ciertos idiomas.",
           "TITLE": "Voz para el Texto a Voz",
@@ -488,10 +492,6 @@
         "TEXT_TO_SPEECH_SPEED": {
           "DESCRIPTION": "La velocidad a la que se habla el texto de las tarjetas de estudio.",
           "TITLE": "Velocidad del Texto a Voz"
-        },
-        "TYPE_ANSWER": {
-          "DESCRIPTION": "Mostrar un cuadro de texto en el frente de cada tarjeta de estudio y comparar lo que escribes con la respuesta en el reverso de la tarjeta.",
-          "TITLE": "Escribir Respuesta"
         }
       },
       "ORDERING": {
@@ -548,14 +548,14 @@
         "TITLE": "Idioma de la Interfaz de RemNote"
       },
       "LEFT_SIDEBAR_TUTORIALS": {
-        "KEYWORDS": "barra lateral izquiera tutoriales consejos ayuda soporte aprender tutorial",
         "LABEL": "Mostrar tutoriales sobre las funciones de RemNote que estás usando actualmente en la esquina de la pantalla.",
-        "TITLE": "Tutoriales Interactivos"
+        "TITLE": "Tutoriales Interactivos",
+        "KEYWORDS": "barra lateral izquiera tutoriales consejos ayuda soporte aprender tutorial"
       },
       "ONBOARDING_TIPS_SHORTCUTS": {
-        "KEYWORDS": "consejos ayuda soporte aprender tutorial",
         "LABEL": "Mostrar consejos sobre los atajos de teclado que estás usando actualmente en la esquina de la pantalla.",
-        "TITLE": "Consejos de Atajos de Teclado"
+        "TITLE": "Consejos de Atajos de Teclado",
+        "KEYWORDS": "consejos ayuda soporte aprender tutorial"
       },
       "SIMPLIFIED_UI": {
         "LABEL": "Simplificar la interfaz de usuario y ocultar funciones avanzadas.",
@@ -591,6 +591,10 @@
         }
       }
     },
+    "PLANS": {
+      "KEYWORDS": "invitar amigos plan cambiar suscripción ganar créditos remnote gratis enviar tweet email elegir plan aprendizaje de por vida pro desglose de funciones opciones de precios",
+      "TITLE": "Planes"
+    },
     "NOTIFICATIONS": {
       "DESCRIPTIONS": {
         "ARTICLE_VIEWS": {
@@ -622,23 +626,19 @@
           "TITLE": "Notificaciones de racha"
         }
       },
-      "ENABLE_COMMUNITY_LABEL": "Recibe notificaciones instantáneas cuando alguien interactúe con tu contenido compartido.",
-      "ENABLE_COMMUNITY_TITLE": "Notificaciones de las Flashcards Compartidas",
       "ENABLE_DUE_CARDS_LABEL": "Mostrar el número total de tarjetas pendientes como una insignia en el icono de la aplicación RemNote en tu pantalla de inicio",
       "ENABLE_DUE_CARDS_TITLE": "Insignia de tarjetas pendientes",
       "ENABLE_EMAIL_LABEL": "Recibir notificaciones directamente en tu bandeja de entrada",
       "ENABLE_EMAIL_TITLE": "Activar notificaciones de la comunidad por correo electrónico",
       "ENABLE_PUSH_LABEL": "Recibir notificaciones directamente en tu dispositivo",
       "ENABLE_PUSH_TITLE": "Notificaciones push",
+      "TOGGLE_LABEL": "Controlar qué notificaciones quieres recibir directamente en tu dispositivo",
+      "TOGGLE_TITLE": "Notificarme cuando:",
+      "ENABLE_COMMUNITY_LABEL": "Recibe notificaciones instantáneas cuando alguien interactúe con tu contenido compartido.",
+      "ENABLE_COMMUNITY_TITLE": "Notificaciones de las Flashcards Compartidas",
       "ENABLE_STREAK_DESCRIPTION": "Recibe recordatorios diarios a las 6 p. m. sobre tu racha de tarjetas de estudio",
       "ENABLE_STREAK_TITLE": "Notificaciones Móviles de Rachas",
-      "PUSH_ENABLE_MESSAGE": "Las notificaciones push no están configuradas en este dispositivo. ¡Haz clic aquí para configurarlas!",
-      "TOGGLE_LABEL": "Controlar qué notificaciones quieres recibir directamente en tu dispositivo",
-      "TOGGLE_TITLE": "Notificarme cuando:"
-    },
-    "PLANS": {
-      "KEYWORDS": "invitar amigos plan cambiar suscripción ganar créditos remnote gratis enviar tweet email elegir plan aprendizaje de por vida pro desglose de funciones opciones de precios",
-      "TITLE": "Planes"
+      "PUSH_ENABLE_MESSAGE": "Las notificaciones push no están configuradas en este dispositivo. ¡Haz clic aquí para configurarlas!"
     },
     "SIDEBAR": {
       "CUSTOMIZE_SIDEBAR_SECTIONS": {
@@ -682,14 +682,14 @@
     "UPLOAD_SOURCE": {
       "EMPTY": "Arrastra PDF, Word, PPT y <moreLink>más</moreLink> aquí!",
       "INVALID": "Lo sentimos, RemNote no puede aceptar archivos de este tipo.",
-      "IMPORT_INSTEAD": "RemNote no puede aceptar archivos de este tipo. Sin embargo, ¡podríamos importar las notas o tarjetas de estudio contenidas en este archivo! Intenta seleccionar \"Importar\" desde el menú de la cuenta en la esquina superior izquierda.",
       "LABEL": "Subir",
       "PDF": "PDF",
       "PDF_WITH_COUNT_one": "{{count, number}} PDF",
       "PDF_WITH_COUNT_other": "{{count, number}} PDFs",
       "SELECT_FILES": "Seleccionar archivos",
       "SELECT_FILES_TO_UPLOAD": "Seleccionar archivos para subir",
-      "UPLOADING": "Subiendo..."
+      "UPLOADING": "Subiendo...",
+      "IMPORT_INSTEAD": "RemNote no puede aceptar archivos de este tipo. Sin embargo, ¡podríamos importar las notas o tarjetas de estudio contenidas en este archivo! Intenta seleccionar \"Importar\" desde el menú de la cuenta en la esquina superior izquierda."
     },
     "WIKIMEDIA_COMMONS": {
       "EMPTY": "¡Suelta aquí archivos PDF, Word, PPT y <moreLink>más</moreLink>!",

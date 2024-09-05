@@ -2,7 +2,6 @@
   "COMMON": {
     "ACTIONS": {
       "APPLY": "Uygula",
-      "COPY": "Kopyala",
       "CREATE": "Oluştur",
       "DELETE": "Sil",
       "DUPLICATE": "Çoğalt",
@@ -10,7 +9,8 @@
       "HIDE": "Gizle",
       "REMOVE": "Kaldır",
       "UPDATE": "Güncelle",
-      "VIEW": "Bak"
+      "VIEW": "Bak",
+      "COPY": "Kopyala"
     },
     "AI": {
       "AI_FLASHCARDS": "AI Flaşkartları"
@@ -106,11 +106,6 @@
     "ACCOUNT": {
       "ADVANCED_TITLE": "Gelişmiş Ayarlar",
       "AUTHENTICATION_TITLE": "Doğrulama",
-      "CACHING": {
-        "DESCRIPTION": "Yüklendiğinde resimleri önbelleğe alın, böylece çevrim dışıyken de görüntülenebilir.",
-        "NUMBER_TITLE": "Maksimum Önbelleğe Alınan Görüntü",
-        "TITLE": "Önbelleğe alınıyor"
-      },
       "DANGER_ZONE": {
         "TITLE": "Tehlike Bölgesi"
       },
@@ -137,6 +132,11 @@
       "VERSION": {
         "KEYWORDS": "versiyon",
         "TITLE": "Uygulama Sürümü"
+      },
+      "CACHING": {
+        "DESCRIPTION": "Yüklendiğinde resimleri önbelleğe alın, böylece çevrim dışıyken de görüntülenebilir.",
+        "NUMBER_TITLE": "Maksimum Önbelleğe Alınan Görüntü",
+        "TITLE": "Önbelleğe alınıyor"
       }
     },
     "EARN_CREDIT": {
@@ -198,6 +198,9 @@
       }
     },
     "EDITOR_INTERFACE": {
+      "SINGLE_CLICK_REFERENCES_TO_OPEN": {
+        "TITLE": "Tek Tıklamayla Açılan Referanslar"
+      },
       "ENABLE_ZOOM_INTO_BULLET": {
         "TITLE": "Madde İşaretine Yakınlaştırmayı Etkinleştir"
       },
@@ -207,16 +210,13 @@
       },
       "SCALE_COLLAPSED_REM_BULLETS": {
         "LABEL": "Maddenin etrafındaki halkayı, içeriğine bağlı olarak büyüt veya küçült."
-      },
-      "SINGLE_CLICK_REFERENCES_TO_OPEN": {
-        "TITLE": "Tek Tıklamayla Açılan Referanslar"
       }
     },
     "FLASHCARDS": {
       "DAILY_TARGET": {
         "MAXIMUM_DAILY_TARGET": {
-          "TITLE": "Hedef",
-          "DESCRIPTION": "Her gün en azından bu kadar sayıda bilgi kartını çözerek seriler oluşturun."
+          "DESCRIPTION": "Her gün en azından bu kadar sayıda bilgi kartını çözerek seriler oluşturun.",
+          "TITLE": "Hedef"
         },
         "TODAYS_TARGET": "Bugünün Düzeltilmiş Hedefi:",
         "TODAYS_TARGET_EXPLANATION": "RemNote, önümüzdeki hafta boyunca pratik yapmak için belirlediğiniz günlük hedefinizden ortalama daha az kartınız olacağını öngörüyorsa, günlük hedefinizi geçici olarak düşüreceğiz; böylece başlangıçta çok fazla ve sonunda daha az kart yerine, her gün yaklaşık olarak eşit sayıda kartınız olacak."
@@ -226,15 +226,6 @@
           "DESCRIPTION": "Kelime kartlarındaki ses veya video içeriklerini otomatik olarak oynat.",
           "TITLE": "Medyayı otomatik oynat"
         },
-        "AUTOPLAY_TEXT_TO_SPEECH": {
-          "TITLE": "Metni sese çevirmeyi otomatik oynat"
-        },
-        "LEARN_AHEAD_LIMIT": {
-          "TITLE": "Önceden Öğrenme Limiti"
-        },
-        "NEXT_DAY_STARTS_AT": {
-          "TITLE": "Ertesi Gün Şu Saatte Başlıyor"
-        },
         "RESET_ALL": {
           "CONFIRM_MESSAGE": "Tüm kart ayarlarını varsayılan değerlerine sıfırlamak istediğinizden emin misiniz?",
           "DESCRIPTION": "Tüm flaşkart ayarlarını varsayılan değerlerine geri döndürün.",
@@ -243,6 +234,18 @@
         "SIMPLIFIED_FLASHCARD_BUTTONS": {
           "TITLE": "Basitleştirilmiş Flashcard Düğmeleri"
         },
+        "TYPE_ANSWER": {
+          "TITLE": "Cevap yazın"
+        },
+        "LEARN_AHEAD_LIMIT": {
+          "TITLE": "Önceden Öğrenme Limiti"
+        },
+        "NEXT_DAY_STARTS_AT": {
+          "TITLE": "Ertesi Gün Şu Saatte Başlıyor"
+        },
+        "AUTOPLAY_TEXT_TO_SPEECH": {
+          "TITLE": "Metni sese çevirmeyi otomatik oynat"
+        },
         "TEXT_TO_SPEECH_VOICE": {
           "TITLE": "Metinden Konuşmaya Seslendirmesi",
           "SAMPLE": "Mitokondri hücrenin enerji santralidir."
@@ -250,9 +253,6 @@
         "TEXT_TO_SPEECH_SPEED": {
           "DESCRIPTION": "Flaşkart metninin konuşulduğu hız.",
           "TITLE": "Metinden Konuşmaya Hızı"
-        },
-        "TYPE_ANSWER": {
-          "TITLE": "Cevap yazın"
         }
       },
       "ORDERING": {

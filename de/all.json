@@ -2,7 +2,6 @@
   "COMMON": {
     "ACTIONS": {
       "APPLY": "Anwenden",
-      "COPY": "Kopieren",
       "CREATE": "Erstellen",
       "DELETE": "Löschen",
       "DUPLICATE": "Duplizieren",
@@ -10,7 +9,8 @@
       "HIDE": "Verstecken",
       "REMOVE": "Entfernen",
       "UPDATE": "Aktualisieren",
-      "VIEW": "Ansicht"
+      "VIEW": "Ansicht",
+      "COPY": "Kopieren"
     },
     "AI": {
       "AI_FLASHCARDS": "KI-Karteikarten"
@@ -129,6 +129,24 @@
     },
     "POPUP_TITLE": "Aktuelle Benachrichtigungen"
   },
+  "ONBOARDING": {
+    "SIDEBAR": {
+      "INITIAL": {
+        "0": {
+          "TITLE": "Einen Ordner erstellen"
+        },
+        "1": {
+          "TITLE": "Aufzählungszeichen hinzufügen"
+        },
+        "2": {
+          "TITLE": "Erstellen Sie eine Karteikarte"
+        },
+        "3": {
+          "TITLE": "Notizen mit dem Tabulator strukturieren"
+        }
+      }
+    }
+  },
   "PAGES": {
     "ALL_NOTES": {
       "SORT": {
@@ -220,35 +238,15 @@
   },
   "SETTINGS": {
     "ACCOUNT": {
-      "ADVANCED": {
-        "KEYWORDS": "Unterstützung neu verdrahten Suche Fehlerbeheben"
-      },
       "ADVANCED_TITLE": "Erweiterte Einstellungen",
-      "AUTHENTICATION": {
-        "KEYWORDS": "Abmelden Abmelden Google-Anmeldemethode Hinzufügen Trennen Anmelden Registrieren"
-      },
       "AUTHENTICATION_TITLE": "Authentifizierung",
-      "CACHING": {
-        "DESCRIPTION": "Speichert Bilder beim Hochladen zwischen, sodass sie offline angezeigt werden können.",
-        "NUMBER_DESCRIPTION": "Legt die maximale Anzahl von Bildern fest, die zwischengespeichert werden sollen. Wenn das Limit erreicht ist, werden die ältesten Bilder aus dem Cache entfernt.",
-        "NUMBER_TITLE": "Maximale Anzahl an Bildern im Cache",
-        "TITLE": "Cache",
-        "TOGGLE_DESCRIPTION": "Bei Deaktivierung werden alle zwischengespeicherten Bilder gelöscht.",
-        "TOGGLE_TITLE": "Cache aktivieren"
-      },
       "DANGER_ZONE": {
         "KEYWORDS": "Protokoll synchronisieren, Konto löschen, Rundgang zurücksetzen, Fortschritt zurücksetzen, Einarbeitung, erweiterte Kontoeinstellungen",
         "TITLE": "Gefahrenzone"
       },
       "DANGER_ZONE_TITLE": "Gefahrenzone",
-      "EXPORT_IMPORT": {
-        "KEYWORDS": "Exportiere Sicherung Exportiere Roam Dynalist Logseq Notion Evernote Obsidian"
-      },
       "IMPORT_EXPORT_TITLE": "Import und Export",
       "MY_PROFILE": "Mein Profil",
-      "NAVIGATION": {
-        "KEYWORDS": "Exportieren und Sichere Papierkorb Gelöschte Rem Wissensdatenbank importieren Alle Karten anzeigen  Tägliches Backup herunterladen Erweiterte Einstellungen  Alle Rem löschen"
-      },
       "NAVIGATION_TITLE": "Navigation",
       "PRIVACY": {
         "KEYWORDS": "Privatsphäre",
@@ -270,6 +268,26 @@
       "VERSION": {
         "KEYWORDS": "Version",
         "TITLE": "Anwendungsversion"
+      },
+      "ADVANCED": {
+        "KEYWORDS": "Unterstützung neu verdrahten Suche Fehlerbeheben"
+      },
+      "AUTHENTICATION": {
+        "KEYWORDS": "Abmelden Abmelden Google-Anmeldemethode Hinzufügen Trennen Anmelden Registrieren"
+      },
+      "EXPORT_IMPORT": {
+        "KEYWORDS": "Exportiere Sicherung Exportiere Roam Dynalist Logseq Notion Evernote Obsidian"
+      },
+      "NAVIGATION": {
+        "KEYWORDS": "Exportieren und Sichere Papierkorb Gelöschte Rem Wissensdatenbank importieren Alle Karten anzeigen  Tägliches Backup herunterladen Erweiterte Einstellungen  Alle Rem löschen"
+      },
+      "CACHING": {
+        "DESCRIPTION": "Speichert Bilder beim Hochladen zwischen, sodass sie offline angezeigt werden können.",
+        "NUMBER_DESCRIPTION": "Legt die maximale Anzahl von Bildern fest, die zwischengespeichert werden sollen. Wenn das Limit erreicht ist, werden die ältesten Bilder aus dem Cache entfernt.",
+        "NUMBER_TITLE": "Maximale Anzahl an Bildern im Cache",
+        "TITLE": "Cache",
+        "TOGGLE_DESCRIPTION": "Bei Deaktivierung werden alle zwischengespeicherten Bilder gelöscht.",
+        "TOGGLE_TITLE": "Cache aktivieren"
       },
       "NOTIFICATIONS": {
         "DESCRIPTION": "Senden Sie mobile Push-Erinnerungen über Ihre tägliche Lernkarten Erfolgsserie. Die Erinnerungen kommen jeden Tag um 18:00 Uhr in Ihrer lokalen Zeitzone.",
@@ -358,6 +376,10 @@
       }
     },
     "EDITOR_INTERFACE": {
+      "SINGLE_CLICK_REFERENCES_TO_OPEN": {
+        "TITLE": "Referenzen mit einem Klick zum Öffnen",
+        "LABEL": "Wenn Sie auf eine Referenz klicken oder tippen, gelangen Sie sofort zu ihrem Ziel, anstatt das Referenzmenü zu öffnen. (Sie können das Referenzmenü jederzeit durch einen Rechtsklick anzeigen.)"
+      },
       "ENABLE_ZOOM_INTO_BULLET": {
         "LABEL": "Wenn Sie auf den Aufzählungszeiger klicken, wird der Rest als ganze Seite angezeigt",
         "TITLE": "Aktivieren Sie „In Bullet hineinzoomen“."
@@ -369,10 +391,6 @@
       "SCALE_COLLAPSED_REM_BULLETS": {
         "LABEL": "Passt die Größe des Ringes um den Stichpunkt entsprechend der Anzahl der Unterpunkte an."
       },
-      "SINGLE_CLICK_REFERENCES_TO_OPEN": {
-        "LABEL": "Wenn Sie auf eine Referenz klicken oder tippen, gelangen Sie sofort zu ihrem Ziel, anstatt das Referenzmenü zu öffnen. (Sie können das Referenzmenü jederzeit durch einen Rechtsklick anzeigen.)",
-        "TITLE": "Referenzen mit einem Klick zum Öffnen"
-      },
       "SMOOTHLY_ANIMATE_THE_EDITOR": {
         "LABEL": "Animieren Sie beim Hinzufügen oder Entfernen von Rems im Editor.",
         "TITLE": "Animieren Sie den Editor fließend"
@@ -381,8 +399,8 @@
     "FLASHCARDS": {
       "DAILY_TARGET": {
         "MAXIMUM_DAILY_TARGET": {
-          "TITLE": "Maximales Tagesziel",
-          "DESCRIPTION": "Begrenzen Sie die Anzahl der Lernkarten. RemNote fordert Sie zum Üben auf, um Ihr Tagesziel bei diesem Wert zu erreichen."
+          "DESCRIPTION": "Begrenzen Sie die Anzahl der Lernkarten. RemNote fordert Sie zum Üben auf, um Ihr Tagesziel bei diesem Wert zu erreichen.",
+          "TITLE": "Maximales Tagesziel"
         },
         "TODAYS_TARGET": "Das heutige Ziel:",
         "TODAYS_TARGET_EXPLANATION": "RemNote versucht, Ihr Tagesziel so festzulegen, dass Sie, wenn Sie das Ziel jeden Tag erreichen, in den nächsten 7 Tagen alle zur Überprüfung fälligen Karten ausfüllen. Das Tagesziel wird jedoch niemals höher sein als das oben festgelegte Maximum."
@@ -392,14 +410,6 @@
           "DESCRIPTION": "Wenn eine Karteikarte angezeigt wird, soll automatisch alle darauf befindlichen Audio- oder Videoinhalte abgespielt werde.",
           "TITLE": "Automatisches Abspielen von Medien"
         },
-        "AUTOPLAY_TEXT_TO_SPEECH": {
-          "DESCRIPTION": "Wenn eine Karteikarte gezeigt wird, wird automatisch die Sprachausgabe für die Vorderseite der Karte und die Rückseite der Karte abgespielt.",
-          "TITLE": "Automatische Wiedergabe von Text in Sprache"
-        },
-        "LEARN_AHEAD_LIMIT": {
-          "DESCRIPTION": "Wenn Sie alle Karten, die heute fällig sind, geübt haben, inwieweit können wir in Zukunft Karten nehmen, die noch nicht fällig sind? So können Sie vermeiden, dass Sie zu früh wieder üben müssen.",
-          "TITLE": "Vorauslerngrenze"
-        },
         "LEECH_THRESHOLD": {
           "DESCRIPTION": "Klammernde Karteikarten sind schwierige Karten, die man immer wieder lernt und dann wieder vergisst. Wenn Sie bei einer Karte öfter auf „Vergessen“ klicken, werden Sie von uns gewarnt, damit Sie herausfinden können, warum Sie sich damit schwer tun und das Problem beheben können. Stellen Sie hier einen höheren Wert ein, um die Warnung zu den klammernden Karteikarten seltener zu sehen.",
           "TITLE": "Klammernde Karteikarten Schwellwert"
@@ -407,10 +417,6 @@
         "NEW_CARDS_PER_DAY": {
           "DESCRIPTION": "Fügen Sie jeden Tag höchstens so viele neu erstellte Lernkarten in Ihre Lernkartenwarteschlange ein. Auf diese Weise werden neue Karten in einem gleichmäßigen und nicht in einem großen Stapel in Ihre Warteschlange gelangen.",
           "TITLE": "Maximale Anzahl neuer Karten pro Tag"
-        },
-        "NEXT_DAY_STARTS_AT": {
-          "DESCRIPTION": "Legen Sie die Zeit fest, zu der jeden Tag neue Karten in Ihrer Warteschlange erscheinen.",
-          "TITLE": "Der nächste Tag beginnt um"
         },
         "RESET_ALL": {
           "CONFIRM_MESSAGE": "Sind Sie sicher, dass Sie alle Karteikarten-Einstellungen auf ihre Standardwerte zurücksetzen möchten?",
@@ -425,6 +431,22 @@
           "DESCRIPTION": "Fügen Sie jeden Tag höchstens so viele veraltete Karteikarten wieder in Ihre Karteikartenwarteschlange ein. Veraltete Karten sind Karten, die vorübergehend aus der Warteschlange entfernt werden, weil Sie sie längere Zeit nicht mehr gelernt haben und es anstrengend wäre, sie alle auf einmal neu zu lernen.",
           "TITLE": "Maximale Anzahl veralteter Karten pro Tag"
         },
+        "TYPE_ANSWER": {
+          "DESCRIPTION": "Zeigen Sie auf der Vorderseite jeder Karteikarte ein Textfeld an und vergleichen Sie Ihre Eingabe mit der Antwort auf der Rückseite der Karte.",
+          "TITLE": "Antwort eingeben"
+        },
+        "LEARN_AHEAD_LIMIT": {
+          "DESCRIPTION": "Wenn Sie alle Karten, die heute fällig sind, geübt haben, inwieweit können wir in Zukunft Karten nehmen, die noch nicht fällig sind? So können Sie vermeiden, dass Sie zu früh wieder üben müssen.",
+          "TITLE": "Vorauslerngrenze"
+        },
+        "NEXT_DAY_STARTS_AT": {
+          "DESCRIPTION": "Legen Sie die Zeit fest, zu der jeden Tag neue Karten in Ihrer Warteschlange erscheinen.",
+          "TITLE": "Der nächste Tag beginnt um"
+        },
+        "AUTOPLAY_TEXT_TO_SPEECH": {
+          "DESCRIPTION": "Wenn eine Karteikarte gezeigt wird, wird automatisch die Sprachausgabe für die Vorderseite der Karte und die Rückseite der Karte abgespielt.",
+          "TITLE": "Automatische Wiedergabe von Text in Sprache"
+        },
         "TEXT_TO_SPEECH_VOICE": {
           "DESCRIPTION": "Die Stimme, die für Text in Sprache verwendet wird. Beachten Sie, dass einige Stimmen nur für bestimmte Sprachen funktionieren.",
           "TITLE": "Stimme für Text in Sprache"
@@ -432,10 +454,6 @@
         "TEXT_TO_SPEECH_SPEED": {
           "DESCRIPTION": "Die Geschwindigkeit, in der der Text auf den Karteikarten gesprochen wird.",
           "TITLE": "Text to Speech Geschwindigkeit"
-        },
-        "TYPE_ANSWER": {
-          "DESCRIPTION": "Zeigen Sie auf der Vorderseite jeder Karteikarte ein Textfeld an und vergleichen Sie Ihre Eingabe mit der Antwort auf der Rückseite der Karte.",
-          "TITLE": "Antwort eingeben"
         }
       },
       "ORDERING": {
@@ -531,6 +549,10 @@
         }
       }
     },
+    "PLANS": {
+      "KEYWORDS": "Freunde einladen Tarif Abonnement ändern Guthaben verdienen kostenlos remnote verschicke twitter Nachricht wähle einen Tarif Lebenslanges lernen pro Aufschlüsselung der Funktionen Preisoptionen",
+      "TITLE": "Tarife"
+    },
     "NOTIFICATIONS": {
       "DESCRIPTIONS": {
         "ARTICLE_VIEWS": {
@@ -561,19 +583,15 @@
           "TITLE": "Strähne-Benachrichtigungen"
         }
       },
-      "ENABLE_COMMUNITY_TITLE": "Benachrichtigungen zu freigegebenen Lernkarten",
       "ENABLE_DUE_CARDS_TITLE": "Abzeichen für fällige Karten",
       "ENABLE_EMAIL_LABEL": "Erhalten Sie Benachrichtigungen direkt in Ihren Posteingang",
       "ENABLE_EMAIL_TITLE": "E-Mail-Benachrichtigungen aktivieren?",
       "ENABLE_PUSH_LABEL": "Erhalten Sie Benachrichtigungen direkt auf Ihr Gerät",
       "ENABLE_PUSH_TITLE": "Push-Benachrichtigungen aktivieren?",
-      "ENABLE_STREAK_TITLE": "Mobile Streak-Benachrichtigungen",
       "TOGGLE_LABEL": "Steuern Sie, welche Benachrichtigungen Sie direkt auf Ihrem Gerät/Posteingang erhalten möchten",
-      "TOGGLE_TITLE": "Benachrichtigungen filtern"
-    },
-    "PLANS": {
-      "KEYWORDS": "Freunde einladen Tarif Abonnement ändern Guthaben verdienen kostenlos remnote verschicke twitter Nachricht wähle einen Tarif Lebenslanges lernen pro Aufschlüsselung der Funktionen Preisoptionen",
-      "TITLE": "Tarife"
+      "TOGGLE_TITLE": "Benachrichtigungen filtern",
+      "ENABLE_COMMUNITY_TITLE": "Benachrichtigungen zu freigegebenen Lernkarten",
+      "ENABLE_STREAK_TITLE": "Mobile Streak-Benachrichtigungen"
     },
     "SIDEBAR": {
       "CUSTOMIZE_SIDEBAR_SECTIONS": {
@@ -722,23 +740,5 @@
     "TEMPLATES_HELP_TEXT": "Die Vorlage eines Tags ist ein RemNote-Dokument, das automatisch in getaggte Rems kopiert werden kann. Fügen Sie Überschriften, Checklisten und mehr direkt in Ihre Vorlage ein.",
     "TURN_OFF_AUTO_APPLY": "Deaktiviere „Automatisches anwenden“.",
     "VIEW_CONFIGURATION": "Tag konfigurieren"
-  },
-  "ONBOARDING": {
-    "SIDEBAR": {
-      "INITIAL": {
-        "0": {
-          "TITLE": "Einen Ordner erstellen"
-        },
-        "1": {
-          "TITLE": "Aufzählungszeichen hinzufügen"
-        },
-        "2": {
-          "TITLE": "Erstellen Sie eine Karteikarte"
-        },
-        "3": {
-          "TITLE": "Notizen mit dem Tabulator strukturieren"
-        }
-      }
-    }
   }
 }

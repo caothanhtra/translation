@@ -2,7 +2,6 @@
   "COMMON": {
     "ACTIONS": {
       "APPLY": "Aplicar",
-      "COPY": "Copiar",
       "CREATE": "Criar",
       "DELETE": "Deletar",
       "DUPLICATE": "Duplicar",
@@ -10,7 +9,8 @@
       "HIDE": "Ocultar",
       "REMOVE": "Remover",
       "UPDATE": "Atualizar",
-      "VIEW": "Visualizar"
+      "VIEW": "Visualizar",
+      "COPY": "Copiar"
     },
     "AI": {
       "AI_FLASHCARDS": "Flashcards de IA"
@@ -55,7 +55,6 @@
         "READ": "Modo Somente Leitura",
         "WRITE": "Modo de Edição"
       },
-      "MULTI_SELECTION_MODE": "Selecionar Vários Rems",
       "EXPORT": "Exportar",
       "FIND_OR_FILTER": "Localizar ou Filtrar",
       "FIND_TEXT_REFERENCES": {
@@ -74,7 +73,8 @@
       "UNPIN_FROM_SIDEBAR": "Desafixar da Barra Lateral",
       "UNSHARE_DOCUMENT": "Descompartilhar o Documento",
       "VIEW_GRAPH": "Exibir Gráfico Local",
-      "VIEW_TRASH": "Ver Lixeira"
+      "VIEW_TRASH": "Ver Lixeira",
+      "MULTI_SELECTION_MODE": "Selecionar Vários Rems"
     },
     "PUBLISH_STATUS": {
       "DRAFT": "Rascunho",
@@ -130,24 +130,6 @@
       "BODY": "curtiu"
     },
     "POPUP_TITLE": "Notificações recentes"
-  },
-  "ONBOARDING": {
-    "SIDEBAR": {
-      "INITIAL": {
-        "PAGE_0": {
-          "TITLE": "Criar uma pasta"
-        },
-        "PAGE_1": {
-          "TITLE": "Adicionar um Marcador"
-        },
-        "PAGE_2": {
-          "TITLE": "Criar um Flashcard"
-        },
-        "PAGE_3": {
-          "TITLE": "Estruturar notas usando Tab"
-        }
-      }
-    }
   },
   "PAGES": {
     "ALL_NOTES": {
@@ -264,35 +246,15 @@
   },
   "SETTINGS": {
     "ACCOUNT": {
-      "ADVANCED": {
-        "KEYWORDS": "Suporte Religar Buscar Consertar Bug"
-      },
       "ADVANCED_TITLE": "Configurações Avançadas",
-      "AUTHENTICATION": {
-        "KEYWORDS": "Sair Sair Método de Login do Google Adicionar Desconectar Entrar Cadastrar-se"
-      },
       "AUTHENTICATION_TITLE": "Autenticação",
-      "CACHING": {
-        "DESCRIPTION": "Armazene imagens em cache quando elas forem carregadas para que possam ser visualizadas off-line.",
-        "NUMBER_DESCRIPTION": "Defina o número máximo de imagens a serem armazenadas em cache. Quando o limite for atingido, as imagens mais antigas serão removidas do cache.",
-        "NUMBER_TITLE": "Máximo de imagens em cache",
-        "TITLE": "Armazenando em cache",
-        "TOGGLE_DESCRIPTION": "Quando desativado, todas as imagens armazenadas em cache serão apagadas.",
-        "TOGGLE_TITLE": "Ativar Cache"
-      },
       "DANGER_ZONE": {
         "KEYWORDS": "sincronizar log excluir conta redefinir passo a passo progresso redefinir onboarding avançadas conta configurações ",
         "TITLE": "Zona de Perigo"
       },
       "DANGER_ZONE_TITLE": "Área de Perigo",
-      "EXPORT_IMPORT": {
-        "KEYWORDS": "Exportar Backup Exportar Roam Dynalist Logseq Notion Evernote Obsidian"
-      },
       "IMPORT_EXPORT_TITLE": "Importar e Exportar",
       "MY_PROFILE": "Meu perfil",
-      "NAVIGATION": {
-        "KEYWORDS": "Exportação e Backup Lixeira Exibir Deleteado Rem Importar Base de Conhecimento Exibir Todos os Cartões Baixar um Backup Diário Configurações Avançadas Excluir Todos Rem"
-      },
       "NAVIGATION_TITLE": "Navegação",
       "PRIVACY": {
         "KEYWORDS": "privacidade",
@@ -314,6 +276,26 @@
       "VERSION": {
         "KEYWORDS": "versão",
         "TITLE": "Versão do Aplicativo"
+      },
+      "ADVANCED": {
+        "KEYWORDS": "Suporte Religar Buscar Consertar Bug"
+      },
+      "AUTHENTICATION": {
+        "KEYWORDS": "Sair Sair Método de Login do Google Adicionar Desconectar Entrar Cadastrar-se"
+      },
+      "EXPORT_IMPORT": {
+        "KEYWORDS": "Exportar Backup Exportar Roam Dynalist Logseq Notion Evernote Obsidian"
+      },
+      "NAVIGATION": {
+        "KEYWORDS": "Exportação e Backup Lixeira Exibir Deleteado Rem Importar Base de Conhecimento Exibir Todos os Cartões Baixar um Backup Diário Configurações Avançadas Excluir Todos Rem"
+      },
+      "CACHING": {
+        "DESCRIPTION": "Armazene imagens em cache quando elas forem carregadas para que possam ser visualizadas off-line.",
+        "NUMBER_DESCRIPTION": "Defina o número máximo de imagens a serem armazenadas em cache. Quando o limite for atingido, as imagens mais antigas serão removidas do cache.",
+        "NUMBER_TITLE": "Máximo de imagens em cache",
+        "TITLE": "Armazenando em cache",
+        "TOGGLE_DESCRIPTION": "Quando desativado, todas as imagens armazenadas em cache serão apagadas.",
+        "TOGGLE_TITLE": "Ativar Cache"
       },
       "NOTIFICATIONS": {
         "DESCRIPTION": "Enviar lembretes sobre sua sequência diária de flashcards. Os lembretes são enviados às 18h todos os dias, no seu fuso horário local.",
@@ -401,6 +383,10 @@
       }
     },
     "EDITOR_INTERFACE": {
+      "SINGLE_CLICK_REFERENCES_TO_OPEN": {
+        "TITLE": "Único Clique para Abrir Referências",
+        "LABEL": "Ao clicar ou tocar em uma Referência, vá imediatamente para o seu destino, em vez de abrir o menu de referência. (Você sempre pode mostrar o menu de referência clicando com o botão direito.)"
+      },
       "ENABLE_ZOOM_INTO_BULLET": {
         "LABEL": "Ao clicar em um marcador do Rem, mostra o rem como uma página inteira",
         "TITLE": "Ativar Zoom-In em marcadores"
@@ -413,10 +399,6 @@
         "LABEL": "Quando um Rem é colapsado, aumente ou diminua o anel ao redor do seu marcador baseado no número total de descendentes.",
         "TITLE": "Dimensionar Marcadores de Rems Colapsados"
       },
-      "SINGLE_CLICK_REFERENCES_TO_OPEN": {
-        "LABEL": "Ao clicar ou tocar em uma Referência, vá imediatamente para o seu destino, em vez de abrir o menu de referência. (Você sempre pode mostrar o menu de referência clicando com o botão direito.)",
-        "TITLE": "Único Clique para Abrir Referências"
-      },
       "SMOOTHLY_ANIMATE_THE_EDITOR": {
         "LABEL": "Animações sutis ao adicionar e deleter Rems no editor.",
         "TITLE": "Animar Sutilmente o Editor"
@@ -425,8 +407,8 @@
     "FLASHCARDS": {
       "DAILY_TARGET": {
         "MAXIMUM_DAILY_TARGET": {
-          "TITLE": "Meta Diária Máxima",
-          "DESCRIPTION": "Pratique pelo menos essa quantidade de flashcards todos os dias para criar sequências."
+          "DESCRIPTION": "Pratique pelo menos essa quantidade de flashcards todos os dias para criar sequências.",
+          "TITLE": "Meta Diária Máxima"
         },
         "TODAYS_TARGET": "Meta de Hoje:",
         "TODAYS_TARGET_EXPLANATION": "O RemNote tenta definir sua meta diária para que, se você atingi-la todos os dias, todos os cards sejam revisados nos próximos 7 dias. Porém, a meta diária nunca será superior ao máximo definido acima."
@@ -436,14 +418,6 @@
           "DESCRIPTION": "Ao mostrar um flashcard, reproduz automaticamente qualquer áudio ou vídeo contido nele.",
           "TITLE": "Reprodução Automática de Mídia "
         },
-        "AUTOPLAY_TEXT_TO_SPEECH": {
-          "DESCRIPTION": "Ao mostrar um flashcard, reproduza automaticamente o áudio de texto para fala para a frente do cartão e para o verso do cartão depois de revelado.",
-          "TITLE": "Reprodução automática de texto para fala"
-        },
-        "LEARN_AHEAD_LIMIT": {
-          "DESCRIPTION": "Quando você finalizar todos os cartões na sua fila prioritária de revisão, o Remnote imediatamente já vai te mostrar cartões secundários que estão para vencer. Com isso, você não vai ficar com cartões pendentes pra revisar logo após terminar as revisões da sua fila prioritária.",
-          "TITLE": "Aprender além do limite"
-        },
         "LEECH_THRESHOLD": {
           "DESCRIPTION": "\"Cartas Sanguessugas\" são cartas difíceis que você continua aprendendo e depois esquecendo novamente. Se você pressionar “esqueci” em um cartão mais vezes do que o este valor, iremos avisá-lo para que você possa descobrir por que está tendo dificuldades neste card e resolver este problema. Defina valores mais altos para ver o aviso de \"Cartas Sanguessugas\" com menos frequência.",
           "TITLE": "Limite para \"Cartas Sanguessugas\""
@@ -451,10 +425,6 @@
         "NEW_CARDS_PER_DAY": {
           "DESCRIPTION": "Inclua uma quantidade máxima de flashcards novos em sua revisão a cada dia. Dessa forma, novos cartões serão inseridos em sua fila a uma taxa diária constante, em vez de entrar tudo de uma vez.",
           "TITLE": "Máximo de Novos Cards por Dia"
-        },
-        "NEXT_DAY_STARTS_AT": {
-          "DESCRIPTION": "Diariamente, novos cartões aparecerão na sua fila de revisão a partir desse horário",
-          "TITLE": "O próximo dia começa em"
         },
         "RESET_ALL": {
           "CONFIRM_MESSAGE": "Tem certeza de que deseja redefinir todas as configurações de flashcards para os valores padrão?",
@@ -469,6 +439,22 @@
           "DESCRIPTION": "Defina a quantidade máxima de flashcards obsoletos que você quer que sejam reintroduzidos aos poucos em sua fila de revisão diariamente. Cartões obsoletos são aqueles que são temporariamente retidos da fila porque você passou muito tempo sem estudá-los e reaprende-los todos de uma vez seria exaustivo.",
           "TITLE": "Máximo de Cards Obsoletos por Dia"
         },
+        "TYPE_ANSWER": {
+          "DESCRIPTION": "Mostra uma caixa de texto na frente de cada cartão e compara o que você digitou com a resposta no verso do cartão.",
+          "TITLE": "Digitar Resposta"
+        },
+        "LEARN_AHEAD_LIMIT": {
+          "DESCRIPTION": "Quando você finalizar todos os cartões na sua fila prioritária de revisão, o Remnote imediatamente já vai te mostrar cartões secundários que estão para vencer. Com isso, você não vai ficar com cartões pendentes pra revisar logo após terminar as revisões da sua fila prioritária.",
+          "TITLE": "Aprender além do limite"
+        },
+        "NEXT_DAY_STARTS_AT": {
+          "DESCRIPTION": "Diariamente, novos cartões aparecerão na sua fila de revisão a partir desse horário",
+          "TITLE": "O próximo dia começa em"
+        },
+        "AUTOPLAY_TEXT_TO_SPEECH": {
+          "DESCRIPTION": "Ao mostrar um flashcard, reproduza automaticamente o áudio de texto para fala para a frente do cartão e para o verso do cartão depois de revelado.",
+          "TITLE": "Reprodução automática de texto para fala"
+        },
         "TEXT_TO_SPEECH_VOICE": {
           "DESCRIPTION": "A voz usada para conversão de texto em fala. Observe que algumas vozes só funcionam em determinados idiomas.",
           "TITLE": "Voz de texto para fala",
@@ -477,10 +463,6 @@
         "TEXT_TO_SPEECH_SPEED": {
           "DESCRIPTION": "A velocidade na qual o texto do cartão de memória é falado.",
           "TITLE": "Velocidade de Conversão de Texto em Fala"
-        },
-        "TYPE_ANSWER": {
-          "DESCRIPTION": "Mostra uma caixa de texto na frente de cada cartão e compara o que você digitou com a resposta no verso do cartão.",
-          "TITLE": "Digitar Resposta"
         }
       },
       "ORDERING": {
@@ -547,14 +529,14 @@
         "TITLE": "Idioma da interface do RemNote"
       },
       "LEFT_SIDEBAR_TUTORIALS": {
-        "KEYWORDS": "no aplicativo barra lateral esquerda tutoriais dicas ajuda suporte aprender tutorial",
         "LABEL": "Exibe no canto da tela tutoriais sobre funcionalidades do Remnote que você está utilizando no momento.",
-        "TITLE": "Tutoriais no aplicativo"
+        "TITLE": "Tutoriais no aplicativo",
+        "KEYWORDS": "no aplicativo barra lateral esquerda tutoriais dicas ajuda suporte aprender tutorial"
       },
       "ONBOARDING_TIPS_SHORTCUTS": {
-        "KEYWORDS": "dicas ajuda suporte aprender tutorial",
         "LABEL": "Exibe no canto da tela dicas sobre atalhos de teclado que você está utilizando no momento.",
-        "TITLE": "Dicas de atalhos de teclado"
+        "TITLE": "Dicas de atalhos de teclado",
+        "KEYWORDS": "dicas ajuda suporte aprender tutorial"
       },
       "SIMPLIFIED_UI": {
         "LABEL": "Simplifique a interface e oculte recursos avançados.",
@@ -598,6 +580,10 @@
         }
       }
     },
+    "PLANS": {
+      "KEYWORDS": "convidar amigos plano alterar assinatura ganhar créditos grátis remnote enviar tweet email escolher plano aprendizado vitalício pro recursos detalhamento preços opções",
+      "TITLE": "Planos"
+    },
     "NOTIFICATIONS": {
       "DESCRIPTIONS": {
         "ARTICLE_VIEWS": {
@@ -629,23 +615,19 @@
           "TITLE": "Notificações de Sequencia Diária"
         }
       },
-      "ENABLE_COMMUNITY_LABEL": "Receba notificações instantâneas quando alguém interagir com seu conteúdo compartilhado",
-      "ENABLE_COMMUNITY_TITLE": "Notificações de Flashcards Compartilhados",
       "ENABLE_DUE_CARDS_LABEL": "Exibe a quantidade total de cartões à revisar como um pequeno emblema no ícone do aplicativo do Remnote.",
       "ENABLE_DUE_CARDS_TITLE": "Ativar emblema de notificação para cartões à revisar?",
       "ENABLE_EMAIL_LABEL": "Receba notificações diretamente em seu e-mail",
       "ENABLE_EMAIL_TITLE": "Ativar notificações por e-mail?",
       "ENABLE_PUSH_LABEL": "Receba notificações diretamente no seu dispositivo móvel",
       "ENABLE_PUSH_TITLE": "Ativar notificações flutuantes?",
+      "TOGGLE_LABEL": "Controle quais notificações você deseja receber diretamente em seu dispositivo/e-mail",
+      "TOGGLE_TITLE": "Filtrar notificações",
+      "ENABLE_COMMUNITY_LABEL": "Receba notificações instantâneas quando alguém interagir com seu conteúdo compartilhado",
+      "ENABLE_COMMUNITY_TITLE": "Notificações de Flashcards Compartilhados",
       "ENABLE_STREAK_DESCRIPTION": "Receba lembretes diários às 18h sobre sua sequência de flashcards",
       "ENABLE_STREAK_TITLE": "Notificações do Mobile Streak",
-      "PUSH_ENABLE_MESSAGE": "As notificações por push não estão configuradas neste dispositivo. Clique aqui para configurá-las!",
-      "TOGGLE_LABEL": "Controle quais notificações você deseja receber diretamente em seu dispositivo/e-mail",
-      "TOGGLE_TITLE": "Filtrar notificações"
-    },
-    "PLANS": {
-      "KEYWORDS": "convidar amigos plano alterar assinatura ganhar créditos grátis remnote enviar tweet email escolher plano aprendizado vitalício pro recursos detalhamento preços opções",
-      "TITLE": "Planos"
+      "PUSH_ENABLE_MESSAGE": "As notificações por push não estão configuradas neste dispositivo. Clique aqui para configurá-las!"
     },
     "SIDEBAR": {
       "CUSTOMIZE_SIDEBAR_SECTIONS": {
@@ -806,5 +788,23 @@
     "TEMPLATES_HELP_TEXT": "O modelo de uma tag é um documento do RemNote que pode ser copiado automaticamente em um Rem marcado com esta Tag. Adicione cabeçalhos, listas e mais diretamente no seu modelo.",
     "TURN_OFF_AUTO_APPLY": "Desativar Aplicar Automaticamente",
     "VIEW_CONFIGURATION": "Configurar Tag"
+  },
+  "ONBOARDING": {
+    "SIDEBAR": {
+      "INITIAL": {
+        "PAGE_0": {
+          "TITLE": "Criar uma pasta"
+        },
+        "PAGE_1": {
+          "TITLE": "Adicionar um Marcador"
+        },
+        "PAGE_2": {
+          "TITLE": "Criar um Flashcard"
+        },
+        "PAGE_3": {
+          "TITLE": "Estruturar notas usando Tab"
+        }
+      }
+    }
   }
 }

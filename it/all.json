@@ -65,21 +65,6 @@
     },
     "POPUP_TITLE": "Notifiche recenti"
   },
-  "ONBOARDING": {
-    "SIDEBAR": {
-      "INITIAL": {
-        "PAGE_0": {
-          "TITLE": "Crea una cartella"
-        },
-        "PAGE_1": {
-          "TITLE": "Aggiungi un punto elenco"
-        },
-        "PAGE_2": {
-          "TITLE": "Crea una Flashcard"
-        }
-      }
-    }
-  },
   "PAGES": {
     "ALL_NOTES": {
       "SORT": {
@@ -226,6 +211,9 @@
       }
     },
     "EDITOR_INTERFACE": {
+      "SINGLE_CLICK_REFERENCES_TO_OPEN": {
+        "TITLE": "Apri i Riferimenti con un solo click"
+      },
       "ENABLE_ZOOM_INTO_BULLET": {
         "LABEL": "Quando fai clic sul punto elenco, mostra il rem come una pagina intera",
         "TITLE": "Abilita lo zoom nel punto elenco"
@@ -236,16 +224,13 @@
       },
       "SCALE_COLLAPSED_REM_BULLETS": {
         "LABEL": "Quando un Rem è compresso, allarga o rimpicciolisci l'anello attorno al suo punto elenco in base al numero totale di figli."
-      },
-      "SINGLE_CLICK_REFERENCES_TO_OPEN": {
-        "TITLE": "Apri i Riferimenti con un solo click"
       }
     },
     "FLASHCARDS": {
       "DAILY_TARGET": {
         "MAXIMUM_DAILY_TARGET": {
-          "TITLE": "Obiettivo giornaliero massimo",
-          "DESCRIPTION": "Limita il numero di flashcard sulle quali RemNote ti chiederà di esercitarti per raggiungere il tuo obiettivo giornaliero a questo valore."
+          "DESCRIPTION": "Limita il numero di flashcard sulle quali RemNote ti chiederà di esercitarti per raggiungere il tuo obiettivo giornaliero a questo valore.",
+          "TITLE": "Obiettivo giornaliero massimo"
         },
         "TODAYS_TARGET": "Obiettivo di oggi:",
         "TODAYS_TARGET_EXPLANATION": "RemNote tenta di impostare il tuo obiettivo giornaliero in modo tale che, se raggiungi l'obiettivo ogni giorno, completerai tutte le carte destinate alla revisione nei prossimi 7 giorni. Tuttavia, l'obiettivo giornaliero non sarà mai superiore al massimo sopra impostato."
@@ -259,10 +244,6 @@
           "DESCRIPTION": "Includi al massimo questo numero di flashcard appena create nella tua coda di flashcard ogni giorno. In questo modo, le nuove carte entreranno nella tua coda a una velocità giornaliera costante, anziché tutte insieme.",
           "TITLE": "Numero massimo di nuove carte al giorno"
         },
-        "NEXT_DAY_STARTS_AT": {
-          "DESCRIPTION": "Nuove carte appaiono nella tua coda ogni giorno in questo momento.",
-          "TITLE": "Il giorno successivo inizia alle"
-        },
         "RESET_ALL": {
           "CONFIRM_MESSAGE": "Sei sicuro di voler ripristinare tutte le impostazioni sulle flashcard ai valori predefiniti?",
           "DESCRIPTION": "Ripristina tutte le impostazioni sulle flashcard ai valori predefiniti.",
@@ -275,6 +256,10 @@
         "TYPE_ANSWER": {
           "DESCRIPTION": "Mostra una casella di testo sulla parte anteriore di ciascuna flashcard e confronta ciò che scrivi con la risposta sul retro della carta.",
           "TITLE": "Digita la risposta"
+        },
+        "NEXT_DAY_STARTS_AT": {
+          "DESCRIPTION": "Nuove carte appaiono nella tua coda ogni giorno in questo momento.",
+          "TITLE": "Il giorno successivo inizia alle"
         }
       },
       "STATISTICS": {
@@ -344,6 +329,9 @@
         }
       }
     },
+    "PLANS": {
+      "TITLE": "Piani"
+    },
     "NOTIFICATIONS": {
       "DESCRIPTIONS": {
         "ARTICLE_VIEWS": {
@@ -375,9 +363,6 @@
       "ENABLE_PUSH_TITLE": "Abilitare le notifiche push?",
       "TOGGLE_LABEL": "Controlla quali notifiche desideri ricevere direttamente sul tuo dispositivo/posta in arrivo",
       "TOGGLE_TITLE": "Filtra le notifiche"
-    },
-    "PLANS": {
-      "TITLE": "Piani"
     },
     "SIDEBAR": {
       "CUSTOMIZE_SIDEBAR_SECTIONS": {
@@ -530,5 +515,20 @@
     "TEMPLATE_WITH_COUNT_other": "{{count, number}} Modelli",
     "TURN_OFF_AUTO_APPLY": "Disattiva l'applicazione automatica",
     "VIEW_CONFIGURATION": "Configura etichetta"
+  },
+  "ONBOARDING": {
+    "SIDEBAR": {
+      "INITIAL": {
+        "PAGE_0": {
+          "TITLE": "Crea una cartella"
+        },
+        "PAGE_1": {
+          "TITLE": "Aggiungi un punto elenco"
+        },
+        "PAGE_2": {
+          "TITLE": "Crea una Flashcard"
+        }
+      }
+    }
   }
 }
